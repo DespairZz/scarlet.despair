@@ -7,6 +7,8 @@
     <title>Scarlet Despair - Portfolio</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@600&family=Stick&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     
 <body>
@@ -21,7 +23,7 @@
                     <nav class="nav">
                         <a class="link_style" href="../TestList1/index.html" title="Main Page">Home</a>
                         <a class="link_style" href="../TestList1/about.html" title="About Me">About</a>
-                        <a class="link_style" href="../TestList1/feedback.html" title="Contact with Me">FeedBack</a>
+                        <a class="link_style" href="#feedback" title="Contact with Me">FeedBack</a>
                     </nav>
              
                 </div>
@@ -89,7 +91,21 @@
         </div>
            
     </div>
-     
+    
+    <div class="feedback" id="feedback">    
+        <div class="feedback-item">
+           <form class="decor">        
+               <div class="circle"></div>
+               <div class="form-inner" name="contact" method="post" action="mailto: "despairs22@yandex.ru"">
+                   <h2 class="header_logo"><center>Contact with me</center></h2>
+                   <input type="text" placeholder="Username">
+                   <input type="email" placeholder="Email">
+                   <textarea placeholder="Your message" rows="3"></textarea>
+                   <input type="submit" value="Send">
+               </div>
+            </form>
+        </div>
+    </div> 
     
 </div> 
 
@@ -100,6 +116,25 @@
                     <a class="soclink_style" href="https://www.patreon.com/Despairs22" title="Support Me on Patreon"><img src="img/icons/patreon.png"></a>
                 </nav>
             </footer>
-
+    
+<a href="#" class="scrollup"></a>
+<script type="text/javascript">
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+</script>
 </body>
 </html>

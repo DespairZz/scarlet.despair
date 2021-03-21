@@ -16,7 +16,7 @@ body {
     grid-template-areas: "header" "page" "footer";
     height: 100%;
     min-height: 100vh;
-   
+   overflow: hidden;
 }
 
 .footer {
@@ -35,7 +35,7 @@ body {
     flex-wrap: wrap;
     z-index: 2;
     margin: 33px auto;
-    max-width: 1111px;
+    max-width: 950px;
     margin-top: 630px;
      
 }
@@ -49,16 +49,16 @@ body {
     margin-bottom: 22px;
     flex-direction: row;
     overflow: hidden;
-    border-radius: 20px;
-    
+    border-radius: 10px;
+    height: fit-content;
 }
 
 .benefits-icon {
-    width: 300px;
+    width: 295px;
     margin: 0 auto;
     overflow: hidden;
     transition: all 1s ease-in-out;
-    
+    border-radius: 10px;
 }
 
 .benefits-icon:hover {
@@ -97,7 +97,89 @@ body {
 
 .benefits_text {
     text-align: justify-all;   
+
 }
+
+.feedback {
+   justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: 33px auto;
+    max-width: auto;
+    align-content: center;
+    margin-top: 30px;
+    opacity: 0.9;
+}
+
+.feedback-item {
+    box-shadow: 0 10px 25px #000;
+    width: 700px;
+    max-height: 690px;
+    background: url("../img/feed_back.jpg") center no-repeat;
+    padding: 3px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    flex-direction: row;
+    overflow: hidden; 
+    border-radius: 20px;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+}
+.decor {
+   position: relative;
+   max-width: 400px;
+   margin: 50px auto 0;
+   background: #fff;
+   border-radius: 30px;
+    max-height:700px;
+}
+
+.circle {
+   position: absolute;
+   bottom: 80px;
+   left: -55px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: white;
+}
+.form-inner {
+   padding: 50px;
+}
+.form-inner input, .form-inner textarea {
+   display: block;
+   width: 100%;
+   padding: 0 20px;
+   margin-bottom: 10px;
+   background: #E9EFF6;
+   line-height: 40px;
+   border-width: 0;
+   border-radius: 20px;
+   font-family: 'Anton', sans-serif;
+    box-shadow: 0 11px 22px #000;
+}
+.form-inner input[type="submit"] {
+   margin-top: 30px;
+   background: #000;
+   border-bottom: 4px solid #000;
+   color: white;
+   font-size: 22px;
+}
+
+.form-inner input[type="submit"]:hover {
+    color:red;
+    font-size: 25px;
+}
+.form-inner textarea {
+   resize: vertical;
+    max-height: 200px;
+}
+
 
 .mint {
     height: 0; 
@@ -111,7 +193,7 @@ body {
  -o-transition: all 1s ease-out;
  -webkit-transition: all 1s ease-out;
 margin-top: 75px;
-    max-width: 900px;
+    max-width: 800px;
  }
  
 .mint img:hover{
@@ -202,4 +284,14 @@ margin-top: 75px;
 
 .link_style:hover {
     color: red;
+}
+
+.scrollup{
+width:55px;
+height:55px;
+opacity:0.7;
+position:fixed;
+bottom:50px;
+right:100px;
+background: url("../img/icon_top.png") no-repeat;
 }
