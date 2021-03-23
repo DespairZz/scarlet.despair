@@ -22,7 +22,7 @@ body {
 
 .footer {
     flex-shrink: 0;
-    min-width: 550px;
+    min-width: 450px;
     height: 250px;
     background: url("../img/FootBack.jpg") center no-repeat;
     z-index: 10;
