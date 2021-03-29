@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico"/> 
     <title>Scarlet Despair - Portfolio</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@600&family=Stick&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@600&family=Stick&display=swap" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
 </head>
@@ -21,8 +21,8 @@
                     <div class="right_logo">🖌️「 Alex Edwards 」🎮</div>
                     
                     <nav class="nav">
-                        <a class="link_style" href="../TestList1/index.html" title="Main Page">Home</a>
-                        <a class="link_style" href="../TestList1/about.html" title="About Me">About</a>
+                        <a class="link_style" href="index.html" title="Main Page">Home</a>
+                        <a class="link_style" href="#Stories" title="Video Stories">Stories</a>
                         <a class="link_style" href="#feedback" title="Contact with Me">FeedBack</a>
                     </nav>
              
@@ -32,76 +32,111 @@
     
 <div class="page">
 
-    <div class="mint">
-        <script>
-            let backgroundPic=Math.round(Math.random()*3)
-            let image = [];
-                image[0]="img/backgrounds/bg0.png";
-                image[1]="img/backgrounds/bg1.png";
-                image[2]="img/backgrounds/bg2.png";
-                image[3]="img/backgrounds/bg3.png";
-            document.write (" <img src="+image[backgroundPic]+"> ");
-        </script> 
-    </div>
-    
+    <div class="mint"><script src="assets/backgrounds.js"></script></div>
 
-    
-    <div class="benefits">    
+    <div class="benefits_arts">    
         
         <div class="benefits-item">
-            <a href="img/Featured/ClaireRedfield.jpg" rel="nofollow" target="_blank"><img class="benefits-icon" src="img/Featured/ClaireRedfield.jpg" title="Claire Redfield" alt=""></a>
-            <h3 class="benefits-title"><a class="benefits-title" href="img/Featured/ClaireRedfield.jpg" rel="nofollow" target="_blank">Claire Redfield</a></h3>
-            <text class="benefits_text"><p></p></text>
-        </div>
-        
-         <div class="benefits-item">
-            <a href="img/Featured/ErzaScarlet.jpg" rel="nofollow" target="_blank"><img class="benefits-icon" src="img/Featured/ErzaScarlet.jpg" title="Erza Scarlet v4.0" alt=""></a>
-             <h3 class="benefits-title"><a class="benefits-title" href="img/Featured/ErzaScarlet.jpg" rel="nofollow" target="_blank">Erza Scarlet v4.0</a></h3>
-            <text class="benefits_text"></text>
-        </div>
-        
-         <div class="benefits-item">
-            <a href="../TestList1/workpage/sekiro.html"><img class="benefits-icon" src="img/Featured/Sekiro.jpg" title="Sekiro - Shadows Never Die" alt=""></a>
-             <h3 class="benefits-title"><a class="benefits-title" href="../TestList/workpage/sekiro.html" rel="nofollow" target="_blank">Sekiro - Shadows Never Die</a></h3>
-            <text class="benefits_text"></text>
-        </div>
-        
-          <div class="benefits-item">
-            <a href="img/Featured/Mera.jpg" rel="nofollow" target="_blank"><img class="benefits-icon" src="img/Featured/Mera.jpg" title="Mera" alt=""></a>
-            <h3 class="benefits-title"><a class="benefits-title" href="img/Featured/Mera.jpg" rel="nofollow" target="_blank">Queen Mera</a></h3>
-            <text class="benefits_text"></text>
-        </div>
-        
-         <div class="benefits-item">
-            <a href="img/Featured/NaruHina.jpg" rel="nofollow" target="_blank"><img class="benefits-icon" src="img/Featured/NaruHina.jpg" title="NaruHina" alt=""></a>
-             <h3 class="benefits-title"><a class="benefits-title" href="img/Featured/NaruHina.jpg" rel="nofollow" target="_blank">NaruHina</a></h3>
-            <text class="benefits_text"></text>
-        </div>
-        
-         <div class="benefits-item">
-            <a href="img/Featured/AlphaBeta.jpg" rel="nofollow" target="_blank"><img class="benefits-icon" src="img/Featured/AlphaBeta.jpg" title="Amane Suzuha A+B" alt=""></a>
-             <h3 class="benefits-title"><a class="benefits-title" href="img/Featured/AlphaBeta.jpg" rel="nofollow" target="_blank">Amane Suzuha A+B</a></h3>
-            <text class="benefits_text"></text>
+                <a href="workpage/arts/claire_redfield.html"><img class="benefits-icon" src="img/featured/claire_redfield.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/claire_redfield.html">Claire Redfield</a></h3>
         </div>
         
         <div class="benefits-item">
-            <a href="img/Featured/Mayuri.jpg" rel="nofollow" target="_blank"><img class="benefits-icon" src="img/Featured/Mayuri.jpg" title="Kurotsuchi Mayuri" alt=""></a>
-             <h3 class="benefits-title"><a class="benefits-title" href="img/Featured/Mayuri.jpg" rel="nofollow" target="_blank">Kurotsuchi Mayuri</a></h3>
-            <text class="benefits_text"></text>
+                <a href="workpage/arts/erza_scarlet_4.html"><img class="benefits-icon" src="img/featured/erza_scarlet_4.jpg"  alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/erza_scarlet_4.html">Erza Scarlet v4.0</a></h3>
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/sekiro.html"><img class="benefits-icon" src="img/featured/Sekiro.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/sekiro.html">Sekiro - Shadows Never Die</a></h3>  
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/mera.html"><img class="benefits-icon" src="img/featured/mera.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="img/featured/mera.jpg">Queen Mera</a></h3>
+        </div>
+        
+         <div class="benefits-item">
+                <a href="workpage/arts/naruhina_2.html"><img class="benefits-icon" src="img/featured/naruhina_2.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="img/featured/naruhina_2.jpg">NaruHina v2.0</a></h3>  
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/alpha_beta.html"><img class="benefits-icon" src="img/featured/alpha_beta.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/alpha_beta.html">Amane Suzuha A+B</a></h3>
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/mayuri.html"><img class="benefits-icon" src="img/featured/mayuri.jpg"></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/mayuri.html">Kurotsuchi Mayuri</a></h3>
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/superior_kiss.html"><img class="benefits-icon" src="img/featured/superior_kiss.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/superior_kiss.html">Superior Kiss</a></h3>
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/scarlet_witch.html"><img class="benefits-icon" src="img/featured/scarlet_witch.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/scarlet_witch.html">Scarlet Witch</a></h3>
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/renruki.html"><img class="benefits-icon" src="img/featured/renruki.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/renruki.html">RenRuki</a></h3>
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/speedy_time.html"><img class="benefits-icon" src="img/featured/speedy_time.jpg" alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/speedy_time.html">Speedy Time!</a></h3>
+        </div>
+        
+        <div class="benefits-item">
+                <a href="workpage/arts/sasusaku.html"><img class="benefits-icon" src="img/featured/sasusaku.jpg"  alt=""></a>
+                <h3 class="benefits-title"><a class="benefits-title" href="workpage/arts/sasusaku.html">SasuSaku</a></h3>
         </div>
           
-    </div><br>
+    </div>
+    
+    <div class="benefits_video" id="Stories">    
+        
+        <div class="benefits-item">
+                <iframe class="benefits-story" width="295" height="555" src="https://www.youtube.com/embed/LGCX-knJfBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="benefits-title"><a class="benefits-title" href="https://www.youtube.com/watch?v=LGCX-knJfBM" rel="nofollow" target="_blank">Resident Evil 2 Story</a></h3>
+        </div>
+         
+        <div class="benefits-item">
+                <iframe class="benefits-story" width="295" height="315" src="https://www.youtube.com/embed/TdkSXmnOvjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="benefits-title"><a class="benefits-title" href="https://www.youtube.com/watch?v=TdkSXmnOvjE" rel="nofollow" target="_blank">Resident Evil Claire Face Story</a></h3>
+        </div>
+         
+        <div class="benefits-item">
+                <iframe class="benefits-story" width="295" height="555" src="https://www.youtube.com/embed/HcMMmrFQDHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="benefits-title"><a class="benefits-title" href="https://www.youtube.com/watch?v=HcMMmrFQDHo" rel="nofollow" target="_blank">Sekiro Story</a></h3>
+        </div>
+         
+        <div class="benefits-item">
+                <iframe class="benefits-story" width="295" height="555" src="https://www.youtube.com/embed/NlWOCI9bgoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="benefits-title"><a class="benefits-title" href="https://www.youtube.com/watch?v=NlWOCI9bgoc" rel="nofollow" target="_blank">NaruHina 2.0 Story</a></h3>
+        </div>
+         
+        <div class="benefits-item">
+                <iframe class="benefits-story" width="295" height="555" src="https://www.youtube.com/embed/2_s8zP1Wzpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="benefits-title"><a class="benefits-title" href="https://www.youtube.com/watch?v=2_s8zP1Wzpw" rel="nofollow" target="_blank">Spider-Man Story</a></h3>
+        </div>
+          
+    </div>
     
     <div class="feedback" id="feedback">    
         <div class="feedback-item">
-           <form class="decor">        
+           <form class="decor" action="assets/send.php" method="POST">        
                <div class="circle"></div>
                <div class="form-inner" name="contact" method="post" action="mailto: "despairs22@yandex.ru"">
-                   <h2 class="header_logo"><center>Contact with me</center></h2>
-                   <input type="text" placeholder="Username"><br>
-                   <input type="email" placeholder="Email"><br>
+                   <h3 class="header_logo"><center>Contact with Me</center></h3>
+                   <input type="text" name="name" placeholder="Username"><br>
+                   <input type="email" name="email" placeholder="Email"><br>
                    <textarea placeholder="Your message" rows="3"></textarea>
-                   <input type="submit" value="Send">
+                   <input type="submit" class="btn" value="Send">
                </div>
             </form>
         </div>
@@ -118,23 +153,6 @@
             </footer>
     
 <a href="#" class="scrollup"></a>
-<script type="text/javascript">
-$(document).ready(function(){
- 
-$(window).scroll(function(){
-if ($(this).scrollTop() > 100) {
-$('.scrollup').fadeIn();
-} else {
-$('.scrollup').fadeOut();
-}
-});
- 
-$('.scrollup').click(function(){
-$("html, body").animate({ scrollTop: 0 }, 600);
-return false;
-});
- 
-});
-</script>
+<script src="assets/scrollup.js"></script>
 </body>
 </html>

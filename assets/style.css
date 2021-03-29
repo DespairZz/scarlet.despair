@@ -14,7 +14,7 @@ body {
 
 .page {
   flex: 1 0 auto;
-    height: 100%;
+   width: 100%;
     min-height: 100vh;
    overflow: hidden;
     margin: 0 auto;
@@ -22,7 +22,7 @@ body {
 
 .footer {
     flex-shrink: 0;
-    min-width: 450px;
+    width: 100%;
     height: 250px;
     background: url("../img/FootBack.jpg") center no-repeat;
     z-index: 10;
@@ -32,7 +32,7 @@ body {
 
 /*Content*/
 
-.benefits {
+.benefits_arts {
    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -40,22 +40,32 @@ body {
     margin: 0 auto;
     max-width: 950px;
     margin-top: 630px;
-   
 }
+
+.benefits_video {
+   justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+    margin: 0 auto;
+    max-width: 950px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
 
 .benefits-item {
     box-shadow: 0 10px 25px #000;
     max-width: 300px;
     background: #fff;
     padding: 3px;
-    margin-top: 22px;
-    margin-right: 12px;
     flex-direction: row;
     overflow: hidden;
     border-radius: 11px;
     height: fit-content;
     margin: 0 auto;
-    z-index: 10;
+    z-index: 10; 
+    margin-bottom: 22px;
 }
 
 .benefits-item:after {
@@ -64,32 +74,37 @@ body {
 
 .benefits-icon {
     width: 295px;
-    
-    
     overflow: hidden;
     transition: all 1s ease-in-out;
     border-radius: 10px;
 }
 
 .benefits-icon:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
     -moz-transform: scale(1.1);
 }
 
  .benefits-icon img {
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+     
  }
  
 .benefits-icon img:hover{
- -webkit-transform: scale(1.1);
- -moz-transform: scale(1.1);
- -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+   
  }
 
+.benefits-story {
+    width: 295px;
+    overflow: hidden;
+    border-radius: 10px; 
+}
 
 .benefits-title {
     text-align: center;
@@ -106,8 +121,55 @@ body {
 }
 
 .benefits_text {
-    text-align: justify-all;   
-height: fit-content;
+
+    margin-left: 15px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    
+}
+
+.sign {
+    padding: 22px;
+    background: url(../img/sign.png) right no-repeat;
+    height: 130px;
+    text-shadow: 3px 3px 3px #fff;  
+}
+
+.description_text {
+    padding-left: 15px; 
+    border-radius: 11px;
+    text-shadow: 3px 3px 3px #fff;  
+}
+
+.fullwork {   
+    display: flex;
+    z-index: 10; 
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 1111px;
+    margin-top: 700px;
+    margin-bottom: 111px;
+}
+
+.fullworkmax {
+    box-shadow: 0 10px 25px #000;
+    width: 100%;
+    background: #fff;
+    padding: 3px;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 11px;
+    height: fit-content;
+    margin: 0 auto;
+    z-index: 10; 
+    margin-bottom: 22px;
+}
+
+.fullworkma-icon {
+    width: 100%;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
 }
 
 .feedback {   
@@ -116,7 +178,8 @@ height: fit-content;
     margin-top: 30px;
     opacity: 0.9;
     margin: 0 auto;
-   width: auto;
+    max-width: 700px;
+    margin-bottom: 111px;
 }
 
 .feedback-item {
@@ -130,6 +193,7 @@ height: fit-content;
     overflow: hidden; 
     border-radius: 20px;
     margin: 0 auto;
+     width: 100%;
 }
 
 * {
@@ -138,26 +202,28 @@ height: fit-content;
 
 }
 .decor {
-   position: relative;
-   max-width: 400px;
-   margin: 50px auto 0;
-   background: #fff;
-   border-radius: 30px;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: #fff;
+    border-radius: 30px;
     max-height:700px;
 }
 
 .circle {
-   position: absolute;
-   bottom: 80px;
-   left: -55px;
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   background: white;
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
 }
+
 .form-inner {
-   padding: 50px;
+    padding: 50px;
+    width: 100%;
 }
+
 .form-inner input, .form-inner textarea {
     display: block;
     width: 100%;
@@ -171,6 +237,7 @@ height: fit-content;
     box-shadow: 0 11px 11px #000;
     margin: 0 auto;
 }
+
 .form-inner input[type="submit"] {
    margin-top: 30px;
    background: #000;
@@ -183,9 +250,11 @@ height: fit-content;
     color:red;
     font-size: 25px;
 }
+
 .form-inner textarea {
-   resize: vertical;
+    resize: vertical;
     max-height: 200px;
+    
 }
 
 
@@ -193,32 +262,30 @@ height: fit-content;
     height: 0; 
     opacity: .9;
     z-index: -1;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 
 .mint img {
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- -webkit-transition: all 1s ease-out;
-  margin-top: 300px;
-    width: 550px;
-    
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    margin-top: 300px;
+    width: 100%;
  }
  
 .mint img:hover{
- -webkit-transform: scale(1.1);
- -moz-transform: scale(1.1);
- -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
  }
 
 
 
 /*Header*/
 .header {
-     min-width: 550px;
     width: 100%;
     position: absolute;
-     height: 620px;
+    height: 620px;
     background: url("../img/HeadBack0.jpg") center;
 }
 
@@ -226,9 +293,8 @@ height: fit-content;
     font-family: 'Stick', sans-serif;
     color: rebeccapurple;
     font-weight: 700;
-    font-size: 70px;
-text-shadow: 3px 3px 3px #000;
-    
+    font-size:  50px;
+    text-shadow: 3px 3px 3px #000;  
 }
 
 .header_logo:hover {
@@ -241,15 +307,13 @@ text-shadow: 3px 3px 3px #000;
     margin: 0 auto;
     padding-right: 15px;
     z-index: 15;
-    
 }
+
 .right_logo {
     font-family: 'Stick', sans-serif;
     color: rebeccapurple;
     font-size: 22px;
     text-align: right;
-    
-    
 }
 
 /*Links*/
@@ -299,7 +363,7 @@ text-shadow: 3px 3px 3px #000;
 }
 
 .link_style:hover {
-    color: red;
+    color: red; 
 }
 
 .scrollup {
